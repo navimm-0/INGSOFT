@@ -1,0 +1,8 @@
+CREATE TABLE usuarios (
+    id SERIAL PRIMARY KEY,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    rol VARCHAR(20) NOT NULL CHECK (rol IN ('admin', 'restaurante', 'cliente')),
+    creado_en TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+-- Puedes añadir aquí la tabla 'restaurantes' y 'clientes' con FK a 'usuarios'.
