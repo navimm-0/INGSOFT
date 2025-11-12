@@ -1,0 +1,13 @@
+# Dependencias
+/node_modules
+
+# Variables de Entorno y Claves de Seguridad
+.env
+.env.secret
+
+# Logs y temporales
+*.log
+npm-debug.log
+
+# Directorio de VS Code (opcional)
+.vscode
