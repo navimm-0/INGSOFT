@@ -1,0 +1,11 @@
+# 1. Dependencias y compilaciones
+/node_modules        # Ignora la carpeta gigante de dependencias
+/dist                # Ignora carpetas de compilación si las usas
+
+# 2. Archivos de Sistema/Editor
+.DS_Store            # Archivo de metadatos de macOS
+.vscode              # Carpeta de configuración de VS Code
+
+# 3. Variables de Entorno y Seguridad 
+.env                 # IGNORA el archivo de credenciales de la DB
+*.log                # Ignora cualquier archivo de registro (log)
